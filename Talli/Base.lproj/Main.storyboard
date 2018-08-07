@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="bCS-Xk-ycx">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="Ihm-Sz-fUR">
+            <objects>
+                <viewController id="zVc-rj-w5T" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ps2-Nj-w7E"/>
+                        <viewControllerLayoutGuide type="bottom" id="Rgo-Mb-e9r"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rhM-Q9-HO9">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KkV-ts-nGG">
+                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gGS-F0-jB8">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="1285"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Header" translatesAutoresizingMaskIntoConstraints="NO" id="l8s-qH-If6">
+                                                <rect key="frame" x="8" y="8" width="584" height="65"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="65" id="d01-y2-8AC"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="100" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9h0-JI-Xr5">
+                                                <rect key="frame" x="8" y="93" width="584" height="142.5"/>
+                                                <string key="text">Talli is a tally keeping application which allows users to make counts quickly and easily. Talli uses an innovative approach to design with an intuitive user interface and fluid, reliable performance as well as adding multiple features ontop of the general tally counting application such as creating multiple counters for one tally, adjusting the increment of a tally and ease of use through simple gestures. Talli makes it simple to create and record tallies without hassle or confusion.</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How to use Talli" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sxc-t6-iT1">
+                                                <rect key="frame" x="8" y="255.5" width="584" height="38.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Creating a New Tally" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="coI-oS-7aH">
+                                                <rect key="frame" x="8" y="314" width="584" height="26.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="100" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="86S-1l-f3j">
+                                                <rect key="frame" x="8" y="352.5" width="584" height="61"/>
+                                                <string key="text">The first bubble presented on the home screen with a "+1" inside of it can be used to add a new tally, tap it once to create a new tally. Tallies are sorted alphabetically on the home screen for ease of location</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Adding and Removing Counters from a Tally" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PLV-9Z-gnc">
+                                                <rect key="frame" x="8" y="425.5" width="584" height="26.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="100" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZTf-5H-IUO">
+                                                <rect key="frame" x="8" y="464" width="584" height="81.5"/>
+                                                <string key="text">To add a counter to your tally, simply press the up button in the top right corner of the screen once you have created a tally. To remove one, press the down button in the top right of the screen. Counters are added and removed from the bottom right of the screen.</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Incrementing and Decrementing a Tally" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xpp-AU-yj7">
+                                                <rect key="frame" x="8" y="660.5" width="584" height="26.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="upArrow" translatesAutoresizingMaskIntoConstraints="NO" id="HSP-CP-A8U">
+                                                <rect key="frame" x="8" y="553.5" width="95" height="95"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="95" id="kd1-b8-Cdh"/>
+                                                    <constraint firstAttribute="width" constant="95" id="wXB-Ty-B7g"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="downArrow" translatesAutoresizingMaskIntoConstraints="NO" id="DnY-9g-d5t">
+                                                <rect key="frame" x="497" y="553.5" width="95" height="95"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="95" id="d97-dF-G0e"/>
+                                                    <constraint firstAttribute="height" constant="95" id="ojg-YA-S6w"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="100" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aDq-ll-du1">
+                                                <rect key="frame" x="8" y="699" width="584" height="61"/>
+                                                <string key="text">When more than one counter is present in a tally, the frame of that counter is indicated by its colour. To increment a counter, tap anywhere within a counter's frame and it will increment that counter.</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="100" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lTy-X3-LV4">
+                                                <rect key="frame" x="8" y="768" width="584" height="61"/>
+                                                <string key="text">To quickly change the value of a counter by a large amount, tap and hold on the counter, then drag up or down to change the value. Dragging up will increase the value, while dragging down will decrease the value. </string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Changing the Increment of a Tally" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5D4-1C-3ZD">
+                                                <rect key="frame" x="8" y="841" width="584" height="26.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="100" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o5V-do-BQn">
+                                                <rect key="frame" x="8" y="879.5" width="584" height="81.5"/>
+                                                <string key="text">The default increment for a tally is one. In order to change this, tap on the circle in the top right corner of the screen and enter a new preferred increment. The keyboard will be removed and the increment will be implemented once you tap on one of the counters.</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="increment" translatesAutoresizingMaskIntoConstraints="NO" id="c3K-xr-Se5">
+                                                <rect key="frame" x="8" y="969" width="95" height="95"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="95" id="99h-56-GzG"/>
+                                                    <constraint firstAttribute="height" constant="95" id="PRh-Te-2Iw"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="And if you like Talli, please leave a friendly rating an review on the app store." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="100" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lQ9-rP-Fy1">
+                                                <rect key="frame" x="8" y="1183.5" width="584" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Deleting a Tally" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lIt-66-W2d">
+                                                <rect key="frame" x="8" y="1076" width="584" height="26.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="100" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hVd-mQ-CsJ">
+                                                <rect key="frame" x="8" y="1110.5" width="584" height="61"/>
+                                                <string key="text">To delete a tally from your record, swipe to it on the home screen and then press and hold until a popup appears asking you if you would like to delete the tally. To delete the taly, press delete.</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TbR-tF-LXn">
+                                                <rect key="frame" x="0.0" y="1220" width="600" height="65"/>
+                                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="65" id="hVx-pU-BhU"/>
+                                                </constraints>
+                                                <state key="normal" title="Back">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="bCS-Xk-ycx" kind="presentation" modalTransitionStyle="flipHorizontal" id="2rt-Hn-8nV"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="lIt-66-W2d" firstAttribute="leading" secondItem="gGS-F0-jB8" secondAttribute="leading" constant="8" id="0wL-8q-uw1"/>
+                                            <constraint firstItem="aDq-ll-du1" firstAttribute="top" secondItem="xpp-AU-yj7" secondAttribute="bottom" constant="12" id="133-Uw-FVR"/>
+                                            <constraint firstAttribute="bottom" secondItem="TbR-tF-LXn" secondAttribute="bottom" id="2be-x6-TWu"/>
+                                            <constraint firstAttribute="trailing" secondItem="o5V-do-BQn" secondAttribute="trailing" constant="8" id="3nh-dk-fHy"/>
+                                            <constraint firstItem="o5V-do-BQn" firstAttribute="top" secondItem="5D4-1C-3ZD" secondAttribute="bottom" constant="12" id="5vQ-Kz-0JQ"/>
+                                            <constraint firstItem="HSP-CP-A8U" firstAttribute="top" secondItem="ZTf-5H-IUO" secondAttribute="bottom" constant="8" id="6uY-1H-8fD"/>
+                                            <constraint firstAttribute="trailing" secondItem="aDq-ll-du1" secondAttribute="trailing" constant="8" id="8hl-wZ-gZN"/>
+                                            <constraint firstItem="l8s-qH-If6" firstAttribute="leading" secondItem="gGS-F0-jB8" secondAttribute="leading" constant="8" id="97w-J1-Sm7"/>
+                                            <constraint firstItem="86S-1l-f3j" firstAttribute="top" secondItem="coI-oS-7aH" secondAttribute="bottom" constant="12" id="9VE-0V-gc1"/>
+                                            <constraint firstItem="ZTf-5H-IUO" firstAttribute="top" secondItem="PLV-9Z-gnc" secondAttribute="bottom" constant="12" id="9ab-BZ-SGz"/>
+                                            <constraint firstItem="l8s-qH-If6" firstAttribute="top" secondItem="gGS-F0-jB8" secondAttribute="top" constant="8" id="9xd-6b-p3Q"/>
+                                            <constraint firstItem="DnY-9g-d5t" firstAttribute="top" secondItem="ZTf-5H-IUO" secondAttribute="bottom" constant="8" id="Bze-mZ-Z1Z"/>
+                                            <constraint firstAttribute="trailing" secondItem="86S-1l-f3j" secondAttribute="trailing" constant="8" id="Cy4-pe-UUR"/>
+                                            <constraint firstItem="86S-1l-f3j" firstAttribute="leading" secondItem="gGS-F0-jB8" secondAttribute="leading" constant="8" id="FEI-83-JcC"/>
+                                            <constraint firstItem="5D4-1C-3ZD" firstAttribute="top" secondItem="lTy-X3-LV4" secondAttribute="bottom" constant="12" id="FVF-By-Kzr"/>
+                                            <constraint firstAttribute="trailing" secondItem="lIt-66-W2d" secondAttribute="trailing" constant="8" id="Hxz-LH-BKe"/>
+                                            <constraint firstItem="PLV-9Z-gnc" firstAttribute="leading" secondItem="gGS-F0-jB8" secondAttribute="leading" constant="8" id="LOS-C6-gWW"/>
+                                            <constraint firstItem="o5V-do-BQn" firstAttribute="leading" secondItem="gGS-F0-jB8" secondAttribute="leading" constant="8" id="M0Z-VE-tzQ"/>
+                                            <constraint firstItem="9h0-JI-Xr5" firstAttribute="top" secondItem="l8s-qH-If6" secondAttribute="bottom" constant="20" id="MBH-hU-2Nz"/>
+                                            <constraint firstAttribute="trailing" secondItem="lTy-X3-LV4" secondAttribute="trailing" constant="8" id="MOc-ov-4b4"/>
+                                            <constraint firstItem="9h0-JI-Xr5" firstAttribute="leading" secondItem="gGS-F0-jB8" secondAttribute="leading" constant="8" id="NuP-wk-GIy"/>
+                                            <constraint firstItem="TbR-tF-LXn" firstAttribute="leading" secondItem="gGS-F0-jB8" secondAttribute="leading" id="Qx3-ui-Hdg"/>
+                                            <constraint firstAttribute="trailing" secondItem="Sxc-t6-iT1" secondAttribute="trailing" constant="8" id="VCY-gx-ntl"/>
+                                            <constraint firstItem="c3K-xr-Se5" firstAttribute="leading" secondItem="gGS-F0-jB8" secondAttribute="leading" constant="8" id="Vp8-M1-38V"/>
+                                            <constraint firstAttribute="trailing" secondItem="xpp-AU-yj7" secondAttribute="trailing" constant="8" id="X2m-FE-fbk"/>
+                                            <constraint firstItem="TbR-tF-LXn" firstAttribute="top" secondItem="lQ9-rP-Fy1" secondAttribute="bottom" constant="16" id="XFN-Nb-0Jq"/>
+                                            <constraint firstAttribute="trailing" secondItem="l8s-qH-If6" secondAttribute="trailing" constant="8" id="YpS-4M-rBS"/>
+                                            <constraint firstItem="coI-oS-7aH" firstAttribute="top" secondItem="Sxc-t6-iT1" secondAttribute="bottom" constant="20" id="ZGO-uN-Vjy"/>
+                                            <constraint firstItem="lTy-X3-LV4" firstAttribute="top" secondItem="aDq-ll-du1" secondAttribute="bottom" constant="8" id="bRQ-nx-ecm"/>
+                                            <constraint firstAttribute="trailing" secondItem="TbR-tF-LXn" secondAttribute="trailing" id="bXj-jP-COr"/>
+                                            <constraint firstItem="ZTf-5H-IUO" firstAttribute="leading" secondItem="gGS-F0-jB8" secondAttribute="leading" constant="8" id="brB-Ry-t0l"/>
+                                            <constraint firstAttribute="trailing" secondItem="5D4-1C-3ZD" secondAttribute="trailing" constant="8" id="c6D-Oa-fRm"/>
+                                            <constraint firstItem="lTy-X3-LV4" firstAttribute="leading" secondItem="gGS-F0-jB8" secondAttribute="leading" constant="8" id="efl-Rw-9lZ"/>
+                                            <constraint firstItem="aDq-ll-du1" firstAttribute="leading" secondItem="gGS-F0-jB8" secondAttribute="leading" constant="8" id="gA6-6I-Dft"/>
+                                            <constraint firstItem="5D4-1C-3ZD" firstAttribute="leading" secondItem="gGS-F0-jB8" secondAttribute="leading" constant="8" id="gHD-kk-OX0"/>
+                                            <constraint firstItem="xpp-AU-yj7" firstAttribute="leading" secondItem="gGS-F0-jB8" secondAttribute="leading" constant="8" id="hLu-6c-xRY"/>
+                                            <constraint firstItem="xpp-AU-yj7" firstAttribute="top" secondItem="HSP-CP-A8U" secondAttribute="bottom" constant="12" id="heb-gf-fET"/>
+                                            <constraint firstAttribute="trailing" secondItem="coI-oS-7aH" secondAttribute="trailing" constant="8" id="hji-fl-bRH"/>
+                                            <constraint firstAttribute="trailing" secondItem="ZTf-5H-IUO" secondAttribute="trailing" constant="8" id="i8W-mO-gv2"/>
+                                            <constraint firstItem="coI-oS-7aH" firstAttribute="leading" secondItem="gGS-F0-jB8" secondAttribute="leading" constant="8" id="ilo-IJ-5VO"/>
+                                            <constraint firstItem="lIt-66-W2d" firstAttribute="top" secondItem="c3K-xr-Se5" secondAttribute="bottom" constant="12" id="ktr-Tj-hRk"/>
+                                            <constraint firstItem="HSP-CP-A8U" firstAttribute="leading" secondItem="gGS-F0-jB8" secondAttribute="leading" constant="8" id="lQS-T4-TIq"/>
+                                            <constraint firstAttribute="trailing" secondItem="PLV-9Z-gnc" secondAttribute="trailing" constant="8" id="lSt-2y-Svq"/>
+                                            <constraint firstItem="lQ9-rP-Fy1" firstAttribute="top" secondItem="hVd-mQ-CsJ" secondAttribute="bottom" constant="12" id="lo2-GQ-5yJ"/>
+                                            <constraint firstItem="Sxc-t6-iT1" firstAttribute="top" secondItem="9h0-JI-Xr5" secondAttribute="bottom" constant="20" id="nhe-Dz-d1L"/>
+                                            <constraint firstAttribute="trailing" secondItem="hVd-mQ-CsJ" secondAttribute="trailing" constant="8" id="nz3-gN-Yj8"/>
+                                            <constraint firstItem="Sxc-t6-iT1" firstAttribute="leading" secondItem="gGS-F0-jB8" secondAttribute="leading" constant="8" id="pPr-Dd-cMY"/>
+                                            <constraint firstAttribute="trailing" secondItem="9h0-JI-Xr5" secondAttribute="trailing" constant="8" id="qLd-ne-xac"/>
+                                            <constraint firstItem="PLV-9Z-gnc" firstAttribute="top" secondItem="86S-1l-f3j" secondAttribute="bottom" constant="12" id="qX7-3S-Pbw"/>
+                                            <constraint firstAttribute="trailing" secondItem="DnY-9g-d5t" secondAttribute="trailing" constant="8" id="rR0-u8-MQ7"/>
+                                            <constraint firstAttribute="trailing" secondItem="lQ9-rP-Fy1" secondAttribute="trailing" constant="8" id="rvf-lh-03k"/>
+                                            <constraint firstItem="c3K-xr-Se5" firstAttribute="top" secondItem="o5V-do-BQn" secondAttribute="bottom" constant="8" id="sFk-M7-q2a"/>
+                                            <constraint firstItem="hVd-mQ-CsJ" firstAttribute="leading" secondItem="gGS-F0-jB8" secondAttribute="leading" constant="8" id="vdr-tP-Wuh"/>
+                                            <constraint firstItem="lQ9-rP-Fy1" firstAttribute="leading" secondItem="gGS-F0-jB8" secondAttribute="leading" constant="8" id="vuU-vq-TbQ"/>
+                                            <constraint firstItem="hVd-mQ-CsJ" firstAttribute="top" secondItem="lIt-66-W2d" secondAttribute="bottom" constant="8" id="zQW-C6-P9a"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="gGS-F0-jB8" secondAttribute="bottom" id="PQP-0M-qqk"/>
+                                    <constraint firstItem="gGS-F0-jB8" firstAttribute="top" secondItem="KkV-ts-nGG" secondAttribute="top" id="rQO-Oo-Ssg"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.33333333329999998" green="0.79607843140000001" blue="0.46666666670000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="KkV-ts-nGG" firstAttribute="top" secondItem="Ps2-Nj-w7E" secondAttribute="bottom" id="3ZQ-Jm-MVm"/>
+                            <constraint firstItem="gGS-F0-jB8" firstAttribute="leading" secondItem="rhM-Q9-HO9" secondAttribute="leadingMargin" constant="-20" id="3iD-tV-GZu"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="gGS-F0-jB8" secondAttribute="trailing" constant="-20" id="6Ev-JS-6hs"/>
+                            <constraint firstAttribute="trailing" secondItem="KkV-ts-nGG" secondAttribute="trailing" id="QPg-Sk-IBu"/>
+                            <constraint firstItem="Rgo-Mb-e9r" firstAttribute="top" secondItem="KkV-ts-nGG" secondAttribute="bottom" id="bt9-lC-N9H"/>
+                            <constraint firstItem="KkV-ts-nGG" firstAttribute="leading" secondItem="rhM-Q9-HO9" secondAttribute="leading" id="tqw-Oe-nfa"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eSm-Ch-5ZI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="47" y="-544"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="iAN-m1-ctb">
+            <objects>
+                <viewController id="bCS-Xk-ycx" customClass="ViewController" customModule="Talli" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aFa-gU-IHX"/>
+                        <viewControllerLayoutGuide type="bottom" id="eAZ-aD-M2G"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yso-he-Hik">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Header" translatesAutoresizingMaskIntoConstraints="NO" id="85b-7i-SbQ">
+                                <rect key="frame" x="20" y="20" width="560" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="YYm-Rt-IVE"/>
+                                </constraints>
+                            </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q06-Bz-9vb">
+                                <rect key="frame" x="0.0" y="85" width="600" height="430"/>
+                                <connections>
+                                    <outlet property="delegate" destination="bCS-Xk-ycx" id="VKF-FF-3Oo"/>
+                                </connections>
+                            </scrollView>
+                            <pageControl opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" hidesForSinglePage="YES" numberOfPages="1" translatesAutoresizingMaskIntoConstraints="NO" id="wXB-q7-vQx">
+                                <rect key="frame" x="0.0" y="515" width="600" height="0.0"/>
+                                <color key="pageIndicatorTintColor" red="0.43529411759999997" green="0.43529411759999997" blue="0.43529411759999997" alpha="0.21950431034482759" colorSpace="calibratedRGB"/>
+                                <color key="currentPageIndicatorTintColor" red="0.43529411764705883" green="0.43529411764705883" blue="0.43529411764705883" alpha="0.50926724137931034" colorSpace="calibratedRGB"/>
+                            </pageControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eYC-FB-ho0">
+                                <rect key="frame" x="0.0" y="20" width="65" height="65"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="Qx9-s6-GX3"/>
+                                    <constraint firstAttribute="width" constant="65" id="knN-1K-aP4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="About">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="zVc-rj-w5T" kind="presentation" modalTransitionStyle="flipHorizontal" id="3wJ-be-cwN"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SJz-Xh-llq">
+                                <rect key="frame" x="0.0" y="515" width="600" height="85"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="85" id="jMS-Hi-1sk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="23"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.33333333333333331" green="0.79718959731543626" blue="0.46666666666666667" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="q06-Bz-9vb" firstAttribute="top" secondItem="85b-7i-SbQ" secondAttribute="bottom" id="4Ei-wQ-NNX"/>
+                            <constraint firstItem="wXB-q7-vQx" firstAttribute="top" secondItem="q06-Bz-9vb" secondAttribute="bottom" id="E4c-6A-rAh"/>
+                            <constraint firstItem="85b-7i-SbQ" firstAttribute="leading" secondItem="yso-he-Hik" secondAttribute="leading" constant="20" id="GTl-rs-AWs"/>
+                            <constraint firstItem="q06-Bz-9vb" firstAttribute="top" secondItem="eYC-FB-ho0" secondAttribute="bottom" id="ICW-Fq-3Is"/>
+                            <constraint firstAttribute="trailing" secondItem="wXB-q7-vQx" secondAttribute="trailing" id="IEo-6C-U7q"/>
+                            <constraint firstAttribute="trailing" secondItem="85b-7i-SbQ" secondAttribute="trailing" constant="20" id="KRj-Et-GK4"/>
+                            <constraint firstItem="85b-7i-SbQ" firstAttribute="top" secondItem="aFa-gU-IHX" secondAttribute="bottom" id="Kcg-Ah-QIP"/>
+                            <constraint firstItem="q06-Bz-9vb" firstAttribute="leading" secondItem="yso-he-Hik" secondAttribute="leading" id="L6r-KE-uQc"/>
+                            <constraint firstItem="eYC-FB-ho0" firstAttribute="leading" secondItem="yso-he-Hik" secondAttribute="leading" id="RB3-se-pMY"/>
+                            <constraint firstItem="eYC-FB-ho0" firstAttribute="top" secondItem="aFa-gU-IHX" secondAttribute="bottom" id="Xtt-nm-EEq"/>
+                            <constraint firstItem="eAZ-aD-M2G" firstAttribute="top" secondItem="SJz-Xh-llq" secondAttribute="bottom" id="diz-of-W9q"/>
+                            <constraint firstAttribute="trailing" secondItem="SJz-Xh-llq" secondAttribute="trailing" id="fpo-zy-5Ob"/>
+                            <constraint firstItem="SJz-Xh-llq" firstAttribute="leading" secondItem="yso-he-Hik" secondAttribute="leading" id="hGq-pC-T0N"/>
+                            <constraint firstItem="wXB-q7-vQx" firstAttribute="leading" secondItem="yso-he-Hik" secondAttribute="leading" id="nKQ-45-P7A"/>
+                            <constraint firstAttribute="trailing" secondItem="q06-Bz-9vb" secondAttribute="trailing" id="rXz-JC-AVJ"/>
+                            <constraint firstItem="SJz-Xh-llq" firstAttribute="top" secondItem="q06-Bz-9vb" secondAttribute="bottom" id="yHd-Gf-6ls"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="allTallies" destination="q06-Bz-9vb" id="Qny-Ry-P0q"/>
+                        <outlet property="nameLabel" destination="SJz-Xh-llq" id="HWp-LC-ael"/>
+                        <outlet property="pageControl" destination="wXB-q7-vQx" id="R3F-ZF-y8v"/>
+                        <segue destination="qbX-KA-YHa" kind="presentation" identifier="newTallySegue" modalTransitionStyle="crossDissolve" id="iZs-d9-DMD"/>
+                        <segue destination="qbX-KA-YHa" kind="presentation" identifier="createdTally" modalTransitionStyle="crossDissolve" id="Qo9-HF-I2f"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="joj-s3-2cD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="47" y="176"/>
+        </scene>
+        <!--Tally View Controller-->
+        <scene sceneID="Zs9-Sv-TTO">
+            <objects>
+                <viewController id="qbX-KA-YHa" customClass="TallyViewController" customModule="Talli" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="EO5-We-soq"/>
+                        <viewControllerLayoutGuide type="bottom" id="z5Z-OU-sjt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Xpk-fn-Pwr">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CtD-4f-lhx">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="67"/>
+                                <color key="backgroundColor" white="1" alpha="0.51654094827586206" colorSpace="calibratedWhite"/>
+                            </view>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Add a new Tally" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="YPa-6t-eF3">
+                                <rect key="frame" x="20" y="20" width="392" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="ZMF-cw-r0v"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="hPb-Kp-ibh"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="30" id="xu1-o6-mEG"/>
+                                </constraints>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="done"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
+                                        <color key="value" red="1" green="1" blue="1" alpha="0.50994073275862073" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="finished:" destination="qbX-KA-YHa" eventType="editingDidEndOnExit" id="xir-qu-Cbb"/>
+                                </connections>
+                            </textField>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1e7-oO-bYG">
+                                <rect key="frame" x="20" y="58" width="392" height="1"/>
+                                <color key="backgroundColor" red="0.7803921568627451" green="0.7803921568627451" blue="0.80392156862745101" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="1" id="hnD-l0-KTB"/>
+                                    <constraint firstAttribute="height" constant="1" id="k6I-9X-XbL"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lVH-BQ-amU">
+                                <rect key="frame" x="466" y="20" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="30" id="Aev-7k-L8a"/>
+                                    <constraint firstAttribute="width" constant="30" id="GuO-jD-mhQ"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="Qwx-Wg-L2o"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="30" id="TrM-Pa-hcD"/>
+                                    <constraint firstAttribute="height" constant="30" id="egj-VT-96V"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="30" id="vew-Iq-Udr"/>
+                                </constraints>
+                                <state key="normal" image="upArrow"/>
+                                <connections>
+                                    <action selector="addOneTally:" destination="qbX-KA-YHa" eventType="touchUpInside" id="6qw-iW-Hoc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="st3-gv-GOT">
+                                <rect key="frame" x="508" y="20" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="9cV-91-xH5"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="30" id="CTF-ZB-3q0"/>
+                                    <constraint firstAttribute="height" constant="30" id="URJ-Hl-6tB"/>
+                                    <constraint firstAttribute="width" constant="30" id="bQ2-tW-dw2"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="30" id="tLI-Xu-MgJ"/>
+                                </constraints>
+                                <state key="normal" image="downArrow"/>
+                                <connections>
+                                    <action selector="removeOneTally:" destination="qbX-KA-YHa" eventType="touchUpInside" id="mYG-o9-n8U"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Rii-1K-lud">
+                                <rect key="frame" x="550" y="20" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Qcx-wU-Du2"/>
+                                    <constraint firstAttribute="width" constant="30" id="WwQ-5R-jjd"/>
+                                </constraints>
+                                <color key="textColor" red="0.7803921568627451" green="0.7803921568627451" blue="0.80392156862745101" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done"/>
+                                <connections>
+                                    <action selector="removeKeyboard:" destination="qbX-KA-YHa" eventType="touchUpOutside" id="HKD-Q9-q7g"/>
+                                </connections>
+                            </textField>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GGH-wR-txZ">
+                                <rect key="frame" x="0.0" y="67" width="600" height="533"/>
+                                <subviews>
+                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="uik-XS-ghG">
+                                        <rect key="frame" x="290" y="257" width="20" height="20"/>
+                                    </activityIndicatorView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="uik-XS-ghG" firstAttribute="centerX" secondItem="GGH-wR-txZ" secondAttribute="centerX" id="6LR-U7-6lt"/>
+                                    <constraint firstItem="uik-XS-ghG" firstAttribute="centerY" secondItem="GGH-wR-txZ" secondAttribute="centerY" id="xGd-7s-xys"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SaY-IU-Xf6">
+                                <rect key="frame" x="424" y="20" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="tgT-Ej-umx"/>
+                                    <constraint firstAttribute="width" constant="30" id="vC8-wZ-LKp"/>
+                                </constraints>
+                                <state key="normal" image="homeIcon"/>
+                                <connections>
+                                    <segue destination="bCS-Xk-ycx" kind="show" id="7e7-nw-Wyq"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.33333333333333331" green="0.79607843137254897" blue="0.46666666666666667" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Rii-1K-lud" firstAttribute="leading" secondItem="st3-gv-GOT" secondAttribute="trailing" constant="12" id="05X-FH-YoK"/>
+                            <constraint firstAttribute="trailing" secondItem="Rii-1K-lud" secondAttribute="trailing" constant="20" id="1Fn-zF-W7F"/>
+                            <constraint firstItem="st3-gv-GOT" firstAttribute="height" secondItem="YPa-6t-eF3" secondAttribute="height" id="6HX-cV-WgG"/>
+                            <constraint firstItem="Rii-1K-lud" firstAttribute="top" secondItem="EO5-We-soq" secondAttribute="bottom" id="8vH-xE-Hdl"/>
+                            <constraint firstAttribute="trailing" secondItem="CtD-4f-lhx" secondAttribute="trailing" id="9Si-66-SLt"/>
+                            <constraint firstItem="st3-gv-GOT" firstAttribute="top" secondItem="EO5-We-soq" secondAttribute="bottom" id="BHE-ph-qxB"/>
+                            <constraint firstItem="st3-gv-GOT" firstAttribute="height" secondItem="lVH-BQ-amU" secondAttribute="height" id="Dcx-BZ-OEH"/>
+                            <constraint firstItem="lVH-BQ-amU" firstAttribute="height" secondItem="YPa-6t-eF3" secondAttribute="height" id="E71-x8-Nby"/>
+                            <constraint firstItem="GGH-wR-txZ" firstAttribute="top" secondItem="1e7-oO-bYG" secondAttribute="bottom" constant="8" id="FUU-9B-ZEA"/>
+                            <constraint firstItem="GGH-wR-txZ" firstAttribute="top" secondItem="CtD-4f-lhx" secondAttribute="bottom" id="Lob-s0-l9D"/>
+                            <constraint firstItem="SaY-IU-Xf6" firstAttribute="top" secondItem="EO5-We-soq" secondAttribute="bottom" id="SgT-Wk-hUe"/>
+                            <constraint firstItem="1e7-oO-bYG" firstAttribute="width" secondItem="YPa-6t-eF3" secondAttribute="width" id="Stl-bg-QEQ"/>
+                            <constraint firstAttribute="trailing" secondItem="GGH-wR-txZ" secondAttribute="trailing" id="UgK-7C-Com"/>
+                            <constraint firstItem="lVH-BQ-amU" firstAttribute="top" secondItem="EO5-We-soq" secondAttribute="bottom" id="aG0-tP-fIT"/>
+                            <constraint firstItem="1e7-oO-bYG" firstAttribute="leading" secondItem="Xpk-fn-Pwr" secondAttribute="leading" constant="20" id="d8L-xe-eGk"/>
+                            <constraint firstItem="SaY-IU-Xf6" firstAttribute="leading" secondItem="YPa-6t-eF3" secondAttribute="trailing" constant="12" id="eyy-6h-InZ"/>
+                            <constraint firstItem="YPa-6t-eF3" firstAttribute="leading" secondItem="Xpk-fn-Pwr" secondAttribute="leading" constant="20" id="fpV-o3-TvI"/>
+                            <constraint firstItem="YPa-6t-eF3" firstAttribute="top" secondItem="EO5-We-soq" secondAttribute="bottom" id="iul-Uf-kMQ"/>
+                            <constraint firstItem="z5Z-OU-sjt" firstAttribute="top" secondItem="GGH-wR-txZ" secondAttribute="bottom" id="kVU-ir-NxL"/>
+                            <constraint firstItem="st3-gv-GOT" firstAttribute="leading" secondItem="lVH-BQ-amU" secondAttribute="trailing" constant="12" id="lJc-kg-u6m"/>
+                            <constraint firstItem="CtD-4f-lhx" firstAttribute="top" secondItem="Xpk-fn-Pwr" secondAttribute="top" id="ofZ-5t-tqe"/>
+                            <constraint firstItem="GGH-wR-txZ" firstAttribute="leading" secondItem="Xpk-fn-Pwr" secondAttribute="leading" id="oho-v1-cCO"/>
+                            <constraint firstItem="st3-gv-GOT" firstAttribute="width" secondItem="lVH-BQ-amU" secondAttribute="width" id="sfV-yr-VwO"/>
+                            <constraint firstItem="1e7-oO-bYG" firstAttribute="top" secondItem="YPa-6t-eF3" secondAttribute="bottom" constant="8" id="srL-lR-FNI"/>
+                            <constraint firstItem="lVH-BQ-amU" firstAttribute="leading" secondItem="SaY-IU-Xf6" secondAttribute="trailing" constant="12" id="uIe-10-QVu"/>
+                            <constraint firstItem="CtD-4f-lhx" firstAttribute="leading" secondItem="Xpk-fn-Pwr" secondAttribute="leading" id="wDD-3X-cj1"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="incrementField" destination="Rii-1K-lud" id="2bc-fR-2TC"/>
+                        <outlet property="tallyNameField" destination="YPa-6t-eF3" id="aUE-NT-pks"/>
+                        <outlet property="tallyView" destination="GGH-wR-txZ" id="cpQ-gt-qxo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jzE-K8-cQn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="864" y="176"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Header" width="361" height="152"/>
+        <image name="downArrow" width="200" height="200"/>
+        <image name="homeIcon" width="128" height="128"/>
+        <image name="increment" width="60" height="60"/>
+        <image name="upArrow" width="200" height="200"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="2rt-Hn-8nV"/>
+        <segue reference="Qo9-HF-I2f"/>
+    </inferredMetricsTieBreakers>
+</document>
